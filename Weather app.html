@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="src/styles.css" />
+    <title>My weather application</title>
+    <style>
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: white;
+            margin: 0;
+            padding: 0;
+            color: #272142;
+        }
+
+        header {
+            display: flex;
+            justify-content: center;
+            padding: 30px 0;
+        }
+
+        form {
+            background-color: #f9f7fe;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(65, 50, 100, 0.1);
+        }
+
+        input[type="search"] {
+            padding: 12px 15px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 16px;
+            width: 200px;
+            margin-right: 10px;
+        }
+
+        input[type="submit"] {
+            padding: 12px 20px;
+            background-color: #885df1;
+            color: white;
+            border: none;
+            border-radius: 6px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+
+        input[type="submit"]:hover {
+            background-color: #3a4ed6;
+        }
+
+        main {
+            display: flex;
+            justify-content: center;
+            margin-top: 30px;
+        }
+
+        .current-weather {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: white;
+            padding: 30px 40px;
+            border-radius: 10px;
+            box-shadow: 0px 10px 20px rgba(65, 50, 100, 0.1);
+            width: 600px;
+        }
+
+        .current-weather h1 {
+            font-size: 38px;
+            margin-top: 10px;
+        }
+
+        .current-weather p {
+            font-size: 16px;
+            color: #a6a4b0;
+            margin: 0;
+        }
+
+        .current-weather p strong {
+            color: #f65282;
+        }
+
+        .current-weather>div:last-child {
+            font-size: 48px;
+            font-weight: bold;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 14px;
+            margin: 40px 0;
+            color: #a6a4b0;
+        }
+
+        footer a {
+            color: #885df1;
+            text-decoration: none;
+        }
+
+        footer a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <form>
+            <input type="search" placeholder="Enter a city.." required />
+            <input type="submit" value="Search" />
+        </form>
+    </header>
+    <main>
+        <div class="current-weather">
+            <div>
+                <h1>Paris</h1>
+                <p>
+                    Saturday 15:32, moderate rain <br />
+                    Humidity: <strong>87%</strong>, Wind: <strong>7.2km/h</strong>
+                </p>
+            </div>
+            <div>☀️ 14°C</div>
+        </div>
+    </main>
+    <footer>
+        <p>
+            This project was coded by
+            <a href="#" target="_blank">Sqiniseko Gumede</a> and is
+            <a href="#" target="_blank"> on GitHub</a> and
+            <a href="#" target="_blank">hosted on Netlify</a>
+        </p>
+    </footer>
+
+</body>
+
+</html>
