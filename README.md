@@ -1,2 +1,2 @@
 # weather-app
-Weather app with only html and css
+Responsive weather app built using HTML and CSS
